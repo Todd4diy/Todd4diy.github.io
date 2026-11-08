@@ -1,21 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Todd 的個人網站</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Todd4diy 個人實驗室：遊戲設計、正在進行的專案，以及實驗筆記。">
+  <meta name="theme-color" content="#DEE5DD">
+  <title>Todd4diy｜個人實驗室</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello GitHub Pages!</h1>
-    <p>我的網站已經成功上線！</p>
-    <p>現在開始建立每天更新網站的工作流程。</p>
+  <div class="page-shell" id="top">
+    <header class="site-header container">
+      <a class="brand" href="#top" aria-label="Todd4diy 返回首頁">
+        <span class="brand-mark" aria-hidden="true">T4</span>
+        <span class="brand-name">Todd4diy</span>
+      </a>
+      <nav class="top-nav" aria-label="主要導覽">
+        <a href="#projects">專案</a>
+        <a href="#notes">筆記</a>
+        <a href="#about">關於</a>
+      </nav>
+    </header>
 
-    <button id="testButton">點我測試</button>
-    <p id="message">尚未點擊</p>
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">一個還在持續生長的<br><span>個人實驗室。</span></h1>
+          <p class="hero-description">收藏正在進行的計畫、遊戲設計研究，以及一些值得嘗試的想法。</p>
+          <a class="primary-link" href="#projects">看看正在做什麼 <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="lab-panel" aria-label="實驗室近況">
+          <div class="lab-illustration" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <span class="orbit-core">✳</span>
+            <span class="lab-cross cross-a">+</span>
+            <span class="lab-cross cross-b">+</span>
+          </div>
+          <div class="lab-panel-copy">
+            <p class="panel-title">目前狀態</p>
+            <p class="panel-note">做一點，記一點，慢慢長成自己的樣子。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <h2 id="projects-title">進行中的專案</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card ziwei">
+            <div class="card-top">
+              <span class="status"><span class="status-dot" aria-hidden="true"></span>進行中</span>
+            </div>
+            <div class="card-symbol" aria-hidden="true">✳</div>
+            <h3>算算紫微</h3>
+            <p class="card-description">從命盤與性格文案出發，逐步製作互動式紫微斗數服務。</p>
+          </article>
+          <article class="project-card slot">
+            <div class="card-top">
+              <span class="status muted"><span class="status-dot" aria-hidden="true"></span>準備搬遷</span>
+            </div>
+            <div class="card-symbol square" aria-hidden="true">▦</div>
+            <h3>虎機職訓所</h3>
+            <p class="card-description">整理 SLOT 遊戲設計的文章與研究，讓舊內容繼續累積。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="notes" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <h2 id="notes-title">實驗筆記</h2>
+        </div>
+        <div class="notes-grid">
+          <article class="note-card">
+            <span class="note-icon" aria-hidden="true">✎</span>
+            <div>
+              <h3>觀察與筆記</h3>
+              <p>記下學到的事、遇到的問題和新的發現。</p>
+            </div>
+          </article>
+          <article class="note-card">
+            <span class="note-icon" aria-hidden="true">✧</span>
+            <div>
+              <h3>願望清單</h3>
+              <p>收藏想研究、想製作與想體驗的事。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">關於這裡</h2>
+          <p>這裡記錄我的專案、想法與練習。專業履歷和作品集，之後會另外整理。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">© 2026 Todd4diy</footer>
+  </div>
 </body>
 </html>
