@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="有一種職場鬼故事，叫「我們靠默契」 前公司的流程是 [機率工程師] 決定玩法 → [遊戲企劃] 包裝主題/營造體感。這在 Slot 行業並不奇怪。數學是命脈，核心玩法由機率工程師掌控合理。 但災難通常發生在規格沒講清">
+<meta name="theme-color" content="#DEE5DD">
+<title>《Slot 企劃》規格書怎麼寫？拒絕通靈！用 BDD 概念打造秒懂的開發文件｜Todd4diy 個人實驗室</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body><div class="page-shell"><header class="site-header container">
+  <a class="brand" href="../../index.html" aria-label="Todd4diy 返回首頁"><span class="brand-mark" aria-hidden="true">T4</span><span class="brand-name">Todd4diy</span></a>
+  <nav class="top-nav" aria-label="主要導覽"><a href="../../index.html">首頁</a><a href="../index.html">虎機職訓所</a></nav>
+</header>
+<main class="container slot-wrap"><article class="slot-article">
+<p class="slot-breadcrumb"><a href="../../index.html">首頁</a> / <a href="../index.html">虎機職訓所</a></p>
+<header class="article-head"><h1>《Slot 企劃》規格書怎麼寫？拒絕通靈！用 BDD 概念打造秒懂的開發文件</h1><p class="article-meta">2025-11-30　·　Slot 企劃</p></header>
+<div class="article-content">
+
+<h2 class="wp-block-heading">有一種職場鬼故事，叫「我們靠默契」</h2>
+
+
+<p>前公司的流程是 [機率工程師] 決定玩法 → [遊戲企劃] 包裝主題/營造體感。這在 Slot 行業並不奇怪。數學是命脈，核心玩法由機率工程師掌控合理。<br/><br/>但災難通常發生在規格沒講清楚，雙方試圖用「默契」來填補溝通黑洞。以下這個鬼故事，是當時企劃與機率單位的日常：<br/><br/>企劃：「以上是這次的企劃，看看家人們有什麼反饋？」 <br/>機率：「這跟我想的不一樣。不夠專業。」 <br/>企劃：「好的！既然我們不專業，那麻煩貴單位指教。」 <br/>機率：「遊戲體感是企劃的責任。」 <br/>企劃：「不如我們討論下規格，之後比較好合作。」 <br/>機率：「我們沒時間，合作久了就會有默契了。」<br/><br/>當企劃被要求靠<strong>默契</strong>交付，那不是合作，是<strong>通靈</strong>。<br/><br/>遊戲企劃同樣身為需求的開端，絕對不可以用”默契”來賭運氣。<br/>我們需要一套<strong>不靠緣分</strong>就能交付的規格方式 ——<strong>BDD（行為驅動開發）</strong>。</p>
+
+
+<h2 class="wp-block-heading">什麼是 BDD?為什麼是規格書神器？</h2>
+
+
+<p>2000 年左右，英國工程師 Dan North 每天被企劃和程式的雞同鴨講搞到頭痛，他發現根本原因是：「大家講的根本不是同一件事！」於是他發明了一個規則，強迫所有功能都用這一句話寫清楚：</p>
+
+
+<blockquote class="wp-block-quote">
+<p>使用者 (玩家) 做了什麼 → 系統 (遊戲) 應該發生什麼事</p>
+</blockquote>
+
+
+<p>這就是 <strong>BDD (Behavior-Driven Development)</strong> 的由來。</p>
+
+
+<h2 class="wp-block-heading">實戰範例：傳統規格書 vs. BDD 結構化寫法</h2>
+
+
+<p>這樣說可能沒有概念，舉個遊戲規格來做案例。 今天有個遊戲企劃，要寫角色二段跳的規格，來做比較。</p>
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-283" decoding="async" loading="lazy" src="../../images/slot/2025/11/BDD%E7%AF%84%E4%BE%8B1-1-1024x437.jpg"/><figcaption class="wp-element-caption">傳統規格書 VS BDD規格</figcaption></figure>
+
+
+<p>企劃乍看了會覺得，這不就只是改寫一般敘事而已？ 不是喔!不是這樣子的！ BDD 寫法用人類語言導入與工程師同頻率的『關鍵字』，帶來了三大質變：</p>
+
+
+<ol class="wp-block-list">
+<li><strong>對工程師而言：</strong> 看到熟悉的格式，看到規格就能直接對應到程式碼結構 不再需要從字裡行間「通靈」或猜測例外狀況。</li>
+
+
+<li><strong>對 QA ：</strong> 規格書是一份「天然的測試腳本」，直接照著操作流程即可驗收，大幅減少溝通誤會。</li>
+
+
+<li><strong>對企劃：</strong><br/> 強迫自己跳脫散文式敘述，學會「系統化拆解」。下筆時必須釐清「前提」、「時機」與「結果」，這是最好的邏輯訓練。<br/>且未來修改規格時，只要改幾行字，不用像改流程圖那樣大動干戈。</li>
+</ol>
+
+
+<h2 class="wp-block-heading">結合原型與 PPT 邏輯?</h2>
+
+
+<p>[<a href="../../slot/slot-ppt-prototype/index.html"><strong>《Slot 原型》遊戲企劃還是文件整理師？原型測試是關鍵</strong></a>]提到原型能加速聚焦，那既然做了原型，還需要寫這麼細的 BDD 嗎？ 需要的。而且有了原型，寫 BDD 反而更簡單。</p>
+
+
+<p>我們可以借用 <strong>PPT 動畫窗格</strong> 的邏輯：<strong>「同時 」</strong> 與 <strong>「然後」</strong>。加上前提與時機，列清楚的 BDD 易如反掌。 </p>
+
+
+<figure class="wp-block-image aligncenter size-large"><img alt="" class="wp-image-284" decoding="async" loading="lazy" src="../../images/slot/2025/11/BDD%E7%AF%84%E4%BE%8B2-1-1024x476.jpg"/><figcaption class="wp-element-caption">PPT 動畫的[同時]、[然後]邏輯，適合用在BDD</figcaption></figure>
+
+
+<h3 class="wp-block-heading">預埋測試參數</h3>
+
+
+<p>原型與真實程式架構還是跟原型工具有一定落差， 尤其是在物理手感與動態時間上。 利用 BDD 的補述，可以在規格中「預埋伏筆」，請工程師將<strong>企劃需要手動調整的參數</strong>直接開在 Debug 介面上。</p>
+
+
+<figure class="wp-block-image aligncenter size-large"><img alt="" class="wp-image-285" decoding="async" loading="lazy" src="../../images/slot/2025/11/BDD%E7%AF%84%E4%BE%8B3-1-1024x422.jpg"/><figcaption class="wp-element-caption">BDD 規格，預埋測試</figcaption></figure>
+
+
+<p>💡測試參數小提醒：</p>
+
+
+<ol class="wp-block-list">
+<li><strong>公規不用列：</strong> 不要開一堆企劃根本不會去動的參數，那是增加別人工作量。</li>
+
+
+<li><strong>動態超過 0.3 秒建議開「<a href="https://easings.net/zh-tw" rel="noopener noreferrer" target="_blank">漸變 (Easing)</a>」：</strong> 漸變很神奇，同樣的秒數，不同的曲線會有完全不同的打擊感（這是 PPT 測不出來的）。不用指定哪種漸變，請工程師開選單讓你測就知道了。</li>
+</ol>
+
+
+<p>這樣做，程式可以專心做架構優化，企劃可以慢慢調手感，皆大歡喜。</p>
+
+
+<h3 class="wp-block-heading">告別流程圖修改地獄，建立團隊共同語言</h3>
+
+
+<p>有人說：「圖像的吸收效率是文字的 60,000 倍。」 這也許對美術適用，但<strong>絕對不適用於邏輯流程圖！</strong></p>
+
+
+<p>流程圖跟心智圖一樣，只有<strong>畫圖的那個人</strong>才會感受到 60,000 倍的吸收效率；其他人看到的不是邏輯，而是一盤<strong>義大利麵</strong>。</p>
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="" class="wp-image-286" decoding="async" loading="lazy" src="../../images/slot/2025/11/%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5-1.jpg"/><figcaption class="wp-element-caption">義大利麵通靈流程圖</figcaption></figure>
+
+
+<p>如果你對流程不安心，想畫流程圖梳理邏輯，我舉雙手贊成。 <strong>但畫完、整理好邏輯後，請轉為 BDD 文字，然後把流程圖丟掉。</strong></p>
+
+
+<p>流程圖無法像 BDD 那樣詳細交代規格與參數，且修改上更是牽一髮動全身。一段流程的交換，或加一個例外判斷，絕對改線改到企劃懷疑人生。</p>
+
+
+<p>企劃不會通靈，工程師也不是靈媒。 規格書不是情書，專案也不是戀愛。 <strong>靠「默契」跟「緣分」這種玄學，不是在工作；還是留在靈幻電影裡吧。</strong></p>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+</div>
+<footer class="article-return"><a href="../index.html">← 返回文章列表</a></footer>
+</article></main><footer class="site-footer container">© 2026 Todd4diy</footer>
+</div></body></html>
