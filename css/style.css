@@ -166,3 +166,13 @@ h3 { margin: 0; font-size: 23px; letter-spacing: -.02em; }
 .slot-entry-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 900px) { .slot-catalog { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 620px) { .slot-wrap { padding-top: 32px; padding-bottom: 60px; } .slot-catalog { grid-template-columns: 1fr; } .slot-article .article-content { font-size: 15px; } }
+
+/* 實驗筆記入口 — 僅新增，不更動既有首頁結構 */
+.notes-section-heading { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.section-more { font-size:13px; font-weight:700; text-decoration:none; color:var(--accent); white-space:nowrap; }
+.section-more:hover { text-decoration:underline; }
+.note-card-link { text-decoration:none; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.note-card-link:hover { transform:translateY(-2px); border-color:#8eb7a0; box-shadow:0 12px 24px rgba(47,77,59,.08); }
+.note-card-link:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.note-card .note-meta { font-size:11px; color:var(--accent); letter-spacing:.02em; margin:0 0 5px; }
+@media (prefers-reduced-motion:reduce) { .note-card-link { transition:none; } }
